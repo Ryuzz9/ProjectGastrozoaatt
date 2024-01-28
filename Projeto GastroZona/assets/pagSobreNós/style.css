@@ -1,0 +1,298 @@
+/*-reset*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	box-sizing: border-box;
+	border:
+		none;
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 1.5em;
+	color: #333;
+}
+
+p {
+	font-size: 1em;
+	color: #777;
+}
+
+#ap {
+	font-size: 2em;
+	background-color: #13c7ae;
+	font-family: 'Open Sans', sans-serif;
+	color: #FFf;
+	text-align: center;
+	float: left;
+	width: 100%;
+}
+
+/*cabecalho*/
+.cabecalho {
+	width: 100%;
+	float: left;
+	padding: 50px 8%;
+	background-color: #13c7ae;
+}
+
+.logo a {
+	width: 90px;
+	height: 49px;
+	float: left;
+	background: url(../img/logo.png) no-repeat;
+	font-size: 0;
+}
+
+.cabecalho form {
+	width: 30%;
+	float: right;
+}
+
+.cabecalho input[type="text"] {
+	width: 75%;
+	float: left;
+	padding: 15px 10px;
+	border-radius: 5px 0 0 5px;
+}
+
+.cabecalho button {
+	width: 15%;
+	float: right;
+	padding: 15px 10px;
+	background-color: #0cae98;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*Menu*/
+.menu {
+	width: 100%;
+	float: left;
+	background-color: #008F62;
+	padding: 18px 8%;
+}
+
+.menu li {
+	float: left;
+}
+
+.menu li a {
+	color: black;
+	margin-right: 25px;
+}
+
+.menu li a:hover {
+	color: #fff
+}
+
+/*Socialicons*/
+.social-icons {
+	float: right;
+}
+
+.social-icons a {
+	color: #fff;
+	float: left;
+	margin-left: 12px;
+}
+
+.btn-facebook:hover {
+	color: #3B5998;
+}
+
+.btn-twitter:hover {
+	color: #54a4d6;
+}
+
+.btn-google:hover {
+	color: #d73d32;
+}
+
+/*prinipal*/
+.principal {
+	width: 100%;
+	float: left;
+	padding: 20px 8%;
+}
+
+.sobre {
+	width: 70%;
+	float: left;
+	padding: 0 20px 20px 0;
+}
+
+.sobre h2 {
+	margin-bottom: 15px;
+}
+
+.sobre img {
+	width: 50%;
+	float: left;
+	border-radius: 5px;
+	margin: 0 15px 15px 0;
+}
+
+.sobre p {
+	text-align: justify;
+}
+
+.onde-estamos {
+	width: 30%;
+	float: right;
+	padding: 10px 20px;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+}
+
+.onde-estamos h2 {
+	margin-bottom: 5px;
+}
+
+.onde-estamos iframe {
+	width: 100%;
+	height: 250px;
+	margin: 20px 0;
+}
+
+.onde-estamos li {
+	color: #777;
+	margin-bottom: 10px;
+}
+
+.onde-estamos i {
+	margin-right: 5px;
+}
+
+.sessao-contato {
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contatoWrap {
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .contato-left {
+    width: 35%;
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+      url(img/fundoo.gif);
+    background-size: cover;
+  }
+  
+  .contato-right {
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+  }
+  
+  .sessao-contato h1 {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+  
+  .sessao-contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-group {
+    position: relative;
+  }
+
+
+
+
+
+
+  .input-group textarea {
+    padding-top: 1rem;
+    max-width: 25rem;
+    max-height: 3rem;
+  }
+  
+  .field-label {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-size: 1rem;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+  
+  .field:focus ~ label {
+    top: 0;
+    font-size: 0.7rem;
+  }
+  
+  .field:focus {
+    border-bottom: 1px solid;
+  }
+  
+  .btn-submit {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    width: 80%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .preenchido{
+      pointer-events: none;
+  }
+
+
+/*Rodapé*/
+.rodape {
+	width: 100%;
+	float: left;
+	background-color: #13c7ae;
+	padding: 20px 8px;
+}
+
+.rodape p {
+	color: #fff;
+}
+
+footer{
+	background-color: #1f5a2e;
+	color: white;
+	text-align: center;
+  }
+  .nav-item a{
+
+	color: rgb(142, 161, 77);
+  }

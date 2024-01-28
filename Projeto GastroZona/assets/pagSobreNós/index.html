@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">/
+<head>
+	<meta charset="UTF-8">
+	<title>SOBRE GASTROZONA</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='type/text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-darkgreen fixed-top">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="../pagina principal/index.html"><img src="img/Gastrô_Zona_Norte_de_Belõ-removebg-preview.png" alt=""
+                  height="30px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../login/login.html">login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../cadastro/index.html">Cadastrar</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Sobre</a></li>
+                          
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+    
+    <main class="principal">
+        <article class="sobre"> 
+            <h2>Sobre nós</h2>
+            <img src="img/pexels-klaus-nielsen-6287322.jpg" alt="Clinica">
+               <p> 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam iste doloribus dolor vero facilis suscipit minus modi maiores aliquid magni, molestiae voluptates, voluptate similique provident odio accusantium placeat numquam debitis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam iste doloribus dolor vero facilis suscipit minus modi maiores aliquid magni, molestiae voluptates, voluptate similique provident odio accusantium placeat numquam debitis. <br> <br>
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam iste doloribus dolor vero facilis suscipit minus modi maiores aliquid magni, molestiae voluptates, voluptate similique provident odio accusantium placeat numquam debitis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam iste doloribus dolor vero facilis suscipit minus modi maiores aliquid magni, molestiae voluptates, voluptate similique provident odio accusantium placeat numquam debitis.
+               </p>  
+       </article>
+      <aside class="onde-estamos">
+        <h2>Onde estamos</h2>
+        <p>Rua Maria de Lourdes Faria N228</p>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15015.258389083547!2d-43.97546822142639!3d-19.805456757357764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa68fb6182c0d59%3A0x1d55a4a099308593!2sR.%20Maria%20de%20Lourdes%20Faria%20-%20Let%C3%ADcia%2C%20Belo%20Horizonte%20-%20MG%2C%2031570-390!5e0!3m2!1spt-BR!2sbr!4v1705866678880!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" ></iframe>
+
+            <h2>Contatos</h2>
+        <ul>
+         <li> <i class="fa fa-phone fa-lg"   ></i>(31)973614517</li>
+         <li> <i class="fa fa-whatsapp fa-lg"></i>(31)000000000</li>
+         <li> <i class="fa fa-envelope fa-lg"></i>joaoandpedro@gmail.com</li>
+        </ul>    
+      </aside>
+   </main> 
+   <section class="sessao-contato" id="contato">
+    <div class="contatoWrap">
+      <div class="contato-left"></div>
+      <div class="contato-right">
+        <h1>Contato</h1>
+        <form class="formulario" name="formulario" onsubmit="return validarformulario()">
+          <div class="input-group">
+            <input type="text" class="field" id="nome">
+            <label for="nome" class="field-label">Nome</label>
+          </div>
+          <div class="input-group">
+            <input type="text" class="field" id="email">
+            <label for="email" class="field-label">E-mail</label>
+          </div>
+          <div class="input-group">
+            <textarea class="field" id="mensagem"></textarea>
+            <label for="mensagem" class="field-label">Mensagem</label>
+          </div>
+          <button type="submit" class="btn btn-submit" onsubmit="return validarformulario()">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <footer>
+      &copy;Gastrozona/SeancVendaNova
+  </footer>
+  </body>    
+</html>  
+       
+        
+    
+
