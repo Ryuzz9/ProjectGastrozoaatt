@@ -271,11 +271,11 @@
         <p>Total: R$ <span id="total-carrinho">0</span></p>
         <div id="paypal-button-container"></div>
         <div class="info">
-            <form id="form" name="form" onsubmit="return enviar()">
+             <form id="form" name="form" onsubmit="return enviar()">
                 <input type="number" placeholder="CEP" id="cep1" name="cep1">
                 <input type="text" placeholder="Endereço1" id="endereco1">
                 <input type="text" placeholder="Endereço2" id="endereco2">
-                <button type="submit">compar paypal</button>
+                <button type="button" onclick="enviar()">compar paypal</button>
             </form>
             <div class="info2">
             <form id="formulario" name="formulario" onsubmit="return comprar()">
