@@ -109,39 +109,36 @@ function renderizarBotaoPayPal() {
         // Atualizar a variável para indicar que o botão foi renderizado
         botaoPayPalRenderizado = true;
     }
-    
-    document.addEventListener("DOMContentLoaded", function () {
-        // Adiciona um listener para o envio do formulário
-        document.getElementById("form").addEventListener("submit", function enviar(event) {
-            event.preventDefault(); // Impede o comportamento padrão do formulário
+}
 
-            var cep1 = document.forms["form"]["cep1"].value;
-            var endereco1 = document.forms["form"]["endereco1"].value;
-            var endereco2 = document.forms["form"]["endereco2"].value;
+// Função para validar o formulário
+function enviar() {
+    var cep1 = document.forms["form"]["cep1"].value;
+    var endereco1 = document.forms["form"]["endereco1"].value;
+    var endereco2 = document.forms["form"]["endereco2"].value;
 
-            if (cep1 == "") {
-                alert("O campo CEP está vazio");
-                return false;
-            }
+    if (cep1 === "") {
+        alert("O campo CEP está vazio");
+        return false;
+    }
 
-            if (endereco1 == "") {
-                alert("O campo Endereço 1 está vazio");
-                return false;
-            }
+    if (endereco1 === "") {
+        alert("O campo Endereço 1 está vazio");
+        return false;
+    }
 
-            localStorage.setItem("cep1", cep1);
-            localStorage.setItem("endereco1", endereco1);
-            localStorage.setItem("endereco2", endereco2);
+    localStorage.setItem("cep1", cep1);
+    localStorage.setItem("endereco1", endereco1);
+    localStorage.setItem("endereco2", endereco2);
 
-            // Exibir o contêiner do PayPal após o envio do formulário
-            document.getElementById("paypal-button-container").style.display = "block";
+    // Exibir o contêiner do PayPal após o envio do formulário
+    document.getElementById("paypal-button-container").style.display = "block";
 
-            // Renderizar o botão do PayPal
-            renderizarBotaoPayPal();
-        });
-    });
+    // Renderizar o botão do PayPal
+    renderizarBotaoPayPal();
 
-
+    // Retornar true para permitir o envio do formulário
+    return true;
 }
 
     // funcção de click para dedect display
